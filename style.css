@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    background: var(--background-color, #1F2023);
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+}
+
+h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.preptime {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: normal;
+}
+
+.recipe-description {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.recipe-img {
+    width: 100%;
+    padding: 0;
+}
+
+.timestamp {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+
+#clock {
+  padding-right: 6px; 
+}
+
+.card {
+    border: 10px solid var(--text-color, #E7EDF0);
+    background-color: #D9D9D9;
+    display: flexbox;
+}
+
+.card-content {
+    padding: 15px;
+    margin-top: -25px;
+}
+
+.primary-button {
+    background: var(--button-bg, #D07138);
+    border: none;
+    padding: 10px 37px;
+    color: #E7EDF0;
+    transition: ease-in-out 0.4s;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background: var(--button-bg-2, #503022);
+}
