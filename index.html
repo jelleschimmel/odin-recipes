@@ -8,30 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/tfb3axw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Odin Recipes</title>
 </head>
 <body>
-    <div class="nav">
-        <nav class="main-nav">
+    <div class="navbar">
+        <div class="container flex">
             <div class="logo"><img src="/images/ODIN’S RECIPES.png" alt="Odin's Recipes"></div>
-            <ul>
-                <li>Home</li>
-                <li>Recipes</li>
-                <li>About</li>
-            </ul>
-            </div>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a class="nav-cta" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="heading">
-        <div class="head">
-            <div class="heading-content" id="heading-content">
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-content">
                 <h2 class="heading-sub">Most delicious meals</h2>
                 <h1 class="heading-title">ODIN'S RECIPES</h1>
                 <h2 class="heading-sub">Healthy food shouldn't be expensive</h2>
             </div>
+            <div class="hero-images">
+                <img src="" alt="">
+            </div>
         </div>
     </div>
-    <div class="cards">
+    <div class="cards" style="display: none">
         <!-- Card 1 -->
         <div class="card">
             <img class="recipe-img"src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg" alt="pancakes">
@@ -43,155 +51,7 @@
                 <p class="recipe-description">Wake up on the right side of the bed with a stack of sweet, cozy, and simple banana pancakes. This top-rated banana
                 pancake recipe is easy to make and it comes together in just 15 minutes, so you don't have to wake up early to enjoy a
                 satisfying breakfast.</p>
-                <a class="primary-button" href="http://" target="_blank" rel="noopener noreferrer">Read more</a>
-            </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="card">
-            <img class="recipe-img"
-                src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg"
-                alt="pancakes">
-            <div class="timestamp">
-                <svg id="clock" width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg"
-                    fill="1F2023" stroke="1F2023">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                        stroke-width="0.144"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <title></title>
-                        <g id="Complete">
-                            <g id="Clock">
-                                <g>
-                                    <polyline fill="none" points="11.9 5.9 11.9 11.9 12 12 14.1 14.1" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
-                                    <circle cx="12" cy="12" data-name="Circle" fill="none" id="Circle-2" r="10" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <p class="preptime">20 minuten</p>
-            </div>
-            <div class="card-content">
-                <h2 class="recipe-header">Pancakes</h2>
-                <p class="recipe-description">Wake up on the right side of the bed with a stack of sweet, cozy, and simple
-                    banana pancakes. This top-rated banana
-                    pancake recipe is easy to make and it comes together in just 15 minutes, so you don't have to wake up early
-                    to enjoy a
-                    satisfying breakfast.</p>
-                <a class="primary-button" href="http://" target="_blank" rel="noopener noreferrer">Read more</a>
-            </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="card">
-            <img class="recipe-img"
-                src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg"
-                alt="pancakes">
-            <div class="timestamp">
-                <svg id="clock" width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg"
-                    fill="1F2023" stroke="1F2023">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                        stroke-width="0.144"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <title></title>
-                        <g id="Complete">
-                            <g id="Clock">
-                                <g>
-                                    <polyline fill="none" points="11.9 5.9 11.9 11.9 12 12 14.1 14.1" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
-                                    <circle cx="12" cy="12" data-name="Circle" fill="none" id="Circle-2" r="10" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <p class="preptime">20 minuten</p>
-            </div>
-            <div class="card-content">
-                <h2 class="recipe-header">Pancakes</h2>
-                <p class="recipe-description">Wake up on the right side of the bed with a stack of sweet, cozy, and simple
-                    banana pancakes. This top-rated banana
-                    pancake recipe is easy to make and it comes together in just 15 minutes, so you don't have to wake up early
-                    to enjoy a
-                    satisfying breakfast.</p>
-                <a class="primary-button" href="http://" target="_blank" rel="noopener noreferrer">Read more</a>
-            </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="card">
-            <img class="recipe-img"
-                src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg"
-                alt="pancakes">
-            <div class="timestamp">
-                <svg id="clock" width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg"
-                    fill="1F2023" stroke="1F2023">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                        stroke-width="0.144"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <title></title>
-                        <g id="Complete">
-                            <g id="Clock">
-                                <g>
-                                    <polyline fill="none" points="11.9 5.9 11.9 11.9 12 12 14.1 14.1" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
-                                    <circle cx="12" cy="12" data-name="Circle" fill="none" id="Circle-2" r="10" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <p class="preptime">20 minuten</p>
-            </div>
-            <div class="card-content">
-                <h2 class="recipe-header">Pancakes</h2>
-                <p class="recipe-description">Wake up on the right side of the bed with a stack of sweet, cozy, and simple
-                    banana pancakes. This top-rated banana
-                    pancake recipe is easy to make and it comes together in just 15 minutes, so you don't have to wake up early
-                    to enjoy a
-                    satisfying breakfast.</p>
-                <a class="primary-button" href="http://" target="_blank" rel="noopener noreferrer">Read more</a>
-            </div>
-        </div>
-        <!-- Card 5 -->
-        <div class="card">
-            <img class="recipe-img"
-                src="https://static.onecms.io/wp-content/uploads/sites/43/2022/02/16/21014-Good-old-Fashioned-Pancakes-mfs_001.jpg"
-                alt="pancakes">
-            <div class="timestamp">
-                <svg id="clock" width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg"
-                    fill="1F2023" stroke="1F2023">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
-                        stroke-width="0.144"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <title></title>
-                        <g id="Complete">
-                            <g id="Clock">
-                                <g>
-                                    <polyline fill="none" points="11.9 5.9 11.9 11.9 12 12 14.1 14.1" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline>
-                                    <circle cx="12" cy="12" data-name="Circle" fill="none" id="Circle-2" r="10" stroke="#1F2023"
-                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <p class="preptime">20 minuten</p>
-            </div>
-            <div class="card-content">
-                <h2 class="recipe-header">Pancakes</h2>
-                <p class="recipe-description">Wake up on the right side of the bed with a stack of sweet, cozy, and simple
-                    banana pancakes. This top-rated banana
-                    pancake recipe is easy to make and it comes together in just 15 minutes, so you don't have to wake up early
-                    to enjoy a
-                    satisfying breakfast.</p>
-                <a class="primary-button" href="http://" target="_blank" rel="noopener noreferrer">Read more</a>
+                <a class="primarybutton" href="http://" target="_blank" rel="noopener noreferrer">Read more</a>
             </div>
         </div>
     </div>
