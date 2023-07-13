@@ -112,8 +112,6 @@ img {
   margin: 0 auto;
   padding: 125px 40px;
   justify-content: space-between;
-  align-items: center;
-  
 }
 
 .showcase-text h1 {
@@ -152,7 +150,7 @@ img {
   gap: 40px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0px 0px;
+  padding: 0px 40px;
   justify-content: center;
   margin-top: -150px;
 }
@@ -201,11 +199,16 @@ img {
   margin: 0 auto;
   padding: 40px;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
 .about-text {
+  max-width: 50%;
+  min-width: 300px
+}
+
+.about-image{
   max-width: 50%;
   min-width: 300px;
 }
