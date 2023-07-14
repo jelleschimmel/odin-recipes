@@ -86,6 +86,7 @@ img {
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
+  justify-content: center;
 }
 
 .flex {
@@ -99,11 +100,13 @@ img {
 .header-recipe {
   max-width: 250px;
   position: relative;
+  display: inline-flex;
 }
 
 .showcase {
   background-color: #e2e2e2;
   min-height: 600px;
+  max-height: 700px;
 }
 
 .showcase-container {
@@ -112,6 +115,7 @@ img {
   margin: 0 auto;
   padding: 125px 40px;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .showcase-text h1 {
@@ -134,6 +138,30 @@ img {
 
 .recipe-images {
   height: 100%;
+  display: flex;
+}
+
+.recipe-images img {
+  display: inline-block;
+  filter: drop-shadow( 0px 0px 20px 6px rgba(0, 0, 0, 0.15););
+}
+
+.recipe-images img:nth-child(1) {
+  position: relative;
+  top: 0px;
+}
+
+.recipe-images img:nth-child(2) {
+  position: relative;
+  top: 100px;
+  right: 100px;
+  z-index: 9;
+}
+
+.recipe-images img:nth-child(3) {
+  position: relative;
+  top: 0px;
+  right: 250px;
 }
 
 .showcase-text a {
@@ -152,7 +180,7 @@ img {
   margin: 0 auto;
   padding: 0px 40px;
   justify-content: center;
-  margin-top: -150px;
+  margin-top: -80px;
 }
 
 .recipe-card {
@@ -198,17 +226,51 @@ img {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+
+.about-container .flex {
+  justify-content: space-between;
 }
 
 .about-text {
-  max-width: 50%;
+  max-width: 45%;
   min-width: 300px
 }
 
 .about-image{
-  max-width: 50%;
+  max-width: 45%;
   min-width: 300px;
+}
+
+.about-rectangle {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  background-color: ;
+}
+
+@media only screen and (max-width: 679px) {
+  .showcase {
+    overflow: hidden;
+  }
+  
+  
+  .recipe-images img:nth-child(3) {
+    display: none;
+  }
+
+  .recipe-images {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .recipe-images {
+    display: none;
+  }
 }
